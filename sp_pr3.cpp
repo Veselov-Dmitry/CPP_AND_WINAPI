@@ -1,14 +1,15 @@
+//===============sp_pr2.h=======
 #define CLASS_NAME TEXT ("sp_pr2_class");//для указателя на строку с именем класса окна
 #define APPLICATION_TITLE TEXT ("Главное окно приложения. Программист <Веселов Дмитрий>");//указателя ... используемую для заголовка окна
 #define DESTROY_MESSAGE TEXT ("Разрушается окно. В связи с этим поступило сообщение WM_DESTROY, из обработчика которого и выполнен данный вывод");//Этот текст необходимо использовать при выводе сообщения о закрытии окна
 #define BUTTONDOWN_MESSAGE TEXT ("Обработка сообщения WM_LBUTTONDOWN, которое посылается в окно при щелчке левой кнопки мыши");
 #define HEIGHT_WINDOW 400;
 #define WIDTH_WINDOW 900;
-
+//==============================
 #include <windows.h>
 #include <Windowsx.h>
 #include <tchar.h>
-#include "sp_pr2.h"
+//#include "sp_pr2.h"
 																			// Глобальные переменные:
 BOOL	InitInstance(HINSTANCE, int);
 LRESULT CALLBACK Pr2_WndProc(HWND, UINT, WPARAM, LPARAM);
