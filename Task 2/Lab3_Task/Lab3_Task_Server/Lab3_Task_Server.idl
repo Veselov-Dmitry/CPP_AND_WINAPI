@@ -1,0 +1,38 @@
+// Lab3_Task_Server.idl : IDL source for Lab3_Task_Server
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Lab3_Task_Server.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(658590C3-6EC0-4E6D-880A-AA483EC6C16A),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IFun : IDispatch{
+	
+	[id(1)] HRESULT Fun121([in] DOUBLE op1, [in] DOUBLE op2, [out,retval] LONG* pResult);	
+	[id(3)] HRESULT Fun123([in] DOUBLE op1, [out,retval] DOUBLE* pResult);
+	[id(4)] HRESULT Fun122([in] LONG op1, [in] LONG op2, [in] LONG op3, [out,retval] FLOAT* pResult);
+};
+[
+	uuid(FE3FFF57-073F-409F-B472-934DFCE243BA),
+	version(1.0),
+]
+library Lab3_Task_ServerLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(A8810077-5619-4F23-A139-EB77D7182A65)		
+	]
+	coclass CoFun
+	{
+		[default] interface IFun;
+	};
+};
+

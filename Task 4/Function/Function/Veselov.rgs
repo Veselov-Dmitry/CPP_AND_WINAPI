@@ -1,0 +1,34 @@
+HKCR
+{
+	Function.Veselov.1 = s 'CoVeselov Class'
+	{
+		CLSID = s '{1B565837-2CE2-4C59-908F-30E878C86F24}'
+		Insertable
+	}
+	Function.Veselov = s 'CoVeselov Class'
+	{		
+		CurVer = s 'Function.Veselov.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1B565837-2CE2-4C59-908F-30E878C86F24} = s 'CoVeselov Class'
+		{
+			ProgID = s 'Function.Veselov.1'
+			VersionIndependentProgID = s 'Function.Veselov'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			ForceRemove Control
+			ForceRemove Insertable
+			ForceRemove 'ToolboxBitmap32' = s '%MODULE%, 106'
+			MiscStatus = s '0'
+			{
+			    '1' = s '%OLEMISC%'
+			}
+			TypeLib = s '{684A8D4C-065A-490C-B530-20446A7285CE}'
+			Version = s '1.0'
+		}
+	}
+}

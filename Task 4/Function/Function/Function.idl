@@ -1,0 +1,69 @@
+// Function.idl : IDL source for Function
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Function.tlb) and marshalling code.
+
+#include "olectl.h"
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(46E3DA6B-AE15-443E-831D-3FC3F17C612D),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IVeselov : IDispatch{
+	[propput, bindable, requestedit, id(DISPID_BACKCOLOR)]
+	HRESULT BackColor([in]OLE_COLOR clr);
+	[propget, bindable, requestedit, id(DISPID_BACKCOLOR)]
+	HRESULT BackColor([out,retval]OLE_COLOR* pclr);	
+	[propget, id(1)] HRESULT MinX([out, retval] SHORT* pVal);
+	[propput, id(1)] HRESULT MinX([in] SHORT newVal);
+	[propget, id(2)] HRESULT MaxX([out, retval] SHORT* pVal);
+	[propput, id(2)] HRESULT MaxX([in] SHORT newVal);
+	[propget, id(3)] HRESULT MinY([out, retval] SHORT* pVal);
+	[propput, id(3)] HRESULT MinY([in] SHORT newVal);
+	[propget, id(4)] HRESULT MaxY([out, retval] SHORT* pVal);
+	[propput, id(4)] HRESULT MaxY([in] SHORT newVal);
+	[propget, id(5)] HRESULT LineColor([out, retval] OLE_COLOR* pVal);
+	[propput, id(5)] HRESULT LineColor([in] OLE_COLOR newVal);
+};
+
+[
+	uuid(684A8D4C-065A-490C-B530-20446A7285CE),
+	version(1.0),
+]
+library FunctionLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(73221A45-76F7-430D-ACAE-BE277C1102CE)		
+	]
+	dispinterface _IVeselovEvents
+	{
+		properties:
+		methods:
+			[id(1)] void ClickRButton(void);
+			[id(2)] void ClickLButton(void);
+	};
+	[
+		uuid(1B565837-2CE2-4C59-908F-30E878C86F24),		
+		control
+	]
+	coclass CoVeselov
+	{
+		[default] interface IVeselov;
+		[default, source] dispinterface _IVeselovEvents;
+	};
+	[
+		uuid(D938932E-EA02-4D56-A544-0505DF1EC58C)		
+	]
+	coclass VeselovProp
+	{
+		[default] interface IUnknown;
+	};
+};
+

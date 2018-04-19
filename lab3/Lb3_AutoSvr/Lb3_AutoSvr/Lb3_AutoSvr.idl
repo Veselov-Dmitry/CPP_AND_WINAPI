@@ -1,0 +1,38 @@
+// Lb3_AutoSvr.idl : IDL source for Lb3_AutoSvr
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (Lb3_AutoSvr.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(F1692F96-B261-490B-8B9B-4C8A3E9E7C34),
+	dual,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IMyMath : IDispatch{
+	[id(1)] HRESULT Add([in] LONG op1, [in] LONG op2, [out,retval] LONG* pResult);
+	[id(2)] HRESULT Subtract([in] LONG op1, [in] LONG op2, [out,retval] LONG* pResult);
+	[id(3)] HRESULT Multiply([in] LONG op1, [in] LONG op2, [out,retval] LONG* pResult);
+	[id(4)] HRESULT Divide([in] LONG op1, [in] LONG op2, [out,retval] LONG* pResult);
+};
+[
+	uuid(4AB20639-FA7F-4668-987D-AD33E1955063),
+	version(1.0),
+]
+library Lb3_AutoSvrLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(03F51E41-BB88-4C61-91F8-D602DCD2D439)		
+	]
+	coclass CoMyMath
+	{
+		[default] interface IMyMath;
+	};
+};
+

@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "lab1_1\lab1_1.vcxproj", "{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{4C44985B-91EE-4925-BEBA-C141EDD78B66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCS", "ClientCS\ClientCS.csproj", "{E27E2A43-8615-43A5-8126-156FDCBD0D11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Debug|Win32.Build.0 = Debug|Win32
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Release|Any CPU.ActiveCfg = Release|Win32
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Release|Win32.ActiveCfg = Release|Win32
+		{3745A4AF-FBBE-43F3-9CCF-149DDB44CEE9}.Release|Win32.Build.0 = Release|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Debug|Win32.Build.0 = Debug|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Release|Win32.ActiveCfg = Release|Win32
+		{4C44985B-91EE-4925-BEBA-C141EDD78B66}.Release|Win32.Build.0 = Release|Win32
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Debug|Win32.Build.0 = Debug|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Release|Win32.ActiveCfg = Release|Any CPU
+		{E27E2A43-8615-43A5-8126-156FDCBD0D11}.Release|Win32.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

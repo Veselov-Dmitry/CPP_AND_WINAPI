@@ -1,0 +1,26 @@
+HKCR
+{
+	Lab3_Task.Fun.1 = s 'CoFun Class'
+	{
+		CLSID = s '{A8810077-5619-4F23-A139-EB77D7182A65}'
+	}
+	Lab3_Task.Fun = s 'CoFun Class'
+	{		
+		CurVer = s 'Lab3_Task.Fun.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {A8810077-5619-4F23-A139-EB77D7182A65} = s 'CoFun Class'
+		{
+			ProgID = s 'Lab3_Task.Fun.1'
+			VersionIndependentProgID = s 'Lab3_Task.Fun'
+			ForceRemove Programmable
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{FE3FFF57-073F-409F-B472-934DFCE243BA}'
+			Version = s '1.0'
+		}
+	}
+}

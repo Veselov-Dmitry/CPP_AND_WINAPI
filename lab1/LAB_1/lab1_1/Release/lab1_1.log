@@ -1,0 +1,8 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(373,5): warning MSB8004: каталог Output заканчивается не косой чертой.  Этот экземпляр сборки добавит косую черту, поскольку она необходима для правильного определения каталога Output.
+SERVER.def(6): warning LNK4017: оператор DESCRIPTION не поддерживается на конечной платформе; пропущен
+     Создается библиотека C:\Users\52758\Desktop\Отчет\lab1\LAB_1\Server.lib и объект C:\Users\52758\Desktop\Отчет\lab1\LAB_1\Server.exp
+  Создание кода
+  All 34 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  lab1_1.vcxproj -> C:\Users\52758\Desktop\Отчет\lab1\LAB_1\Server.dll
+  lab1_1.vcxproj -> C:\Users\52758\Desktop\Отчет\lab1\LAB_1\Server.pdb (Full PDB)

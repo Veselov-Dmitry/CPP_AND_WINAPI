@@ -1,0 +1,25 @@
+HKCR
+{
+	FunctionLib.VeselovProp.1 = s 'VeselovProp Class'
+	{
+		CLSID = s '{D938932E-EA02-4D56-A544-0505DF1EC58C}'
+	}
+	FunctionLib.VeselovProp = s 'VeselovProp Class'
+	{		
+		CurVer = s 'FunctionLib.VeselovProp.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {D938932E-EA02-4D56-A544-0505DF1EC58C} = s 'VeselovProp Class'
+		{
+			ProgID = s 'FunctionLib.VeselovProp.1'
+			VersionIndependentProgID = s 'FunctionLib.VeselovProp'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			TypeLib = s '{684A8D4C-065A-490C-B530-20446A7285CE}'
+			Version = s '1.0'
+		}
+	}
+}
